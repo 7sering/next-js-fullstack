@@ -1,0 +1,14 @@
+.container {
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #02a345;
+    transition: background-color 0.3s ease-in-out;
+    color: white;
+    font-size: 13px;
+    width: max-content;
+  }
+  .button:hover {
+    background-color: rgb(5, 99, 33);
+  }
