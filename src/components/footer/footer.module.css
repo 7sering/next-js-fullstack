@@ -1,7 +1,17 @@
-.footer{
-    height: 50px;
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text{
+    font-size: 16px;
+}
+.social{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    gap: 10px;
+}
+.social_img{
+    cursor: pointer;
 }
