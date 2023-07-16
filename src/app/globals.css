@@ -11,11 +11,22 @@ body {
   background: #02141d;
   color: #bbb;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-.container{
+.light {
+  background: #e7e7e7;
+  color: #202020;
+}
+.dark {
+  background: #02141d;
+  color: #bbb;
+}
+.theme{
+  transition: 1s all ease;
+}
+.container {
   max-width: 1266px;
   min-height: 100vh;
   margin: 0 auto;
