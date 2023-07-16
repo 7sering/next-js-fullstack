@@ -13,7 +13,7 @@ const About = () => {
           alt="about"
           className={styles.img}
         />
-        <div className={styles.textContainer}>
+        <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>Digital Storyteller</h1>
           <h2 className={styles.imgDescription}>
             Best and excellence service award winner
@@ -29,6 +29,7 @@ const About = () => {
             doloribus aliquid ut neque rerum animi quaerat reiciendis explicabo
             labore omnis dolores, amet eos voluptas impedit
             <br />
+            <br />
             eveniet officia blanditiis eligendi corporis. Lorem ipsum dolor sit,
             amet consectetur adipisicing elit. Quisquam doloribus aliquid ut{" "}
             <br />
@@ -38,10 +39,23 @@ const About = () => {
           </p>
         </div>
         <div className={styles.item}>
-        <h1 className={styles.title}>What we do ?</h1>
-        <p className={styles.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam incidunt corrupti accusantium dolorem fugit quos numquam minus quo, excepturi labore aliquam optio delectus, amet necessitatibus. Voluptatem distinctio quae voluptate vero!</p>
-
-        <Button url="contact" text="Contact"/>
+          <h1 className={styles.title}>What we do ?</h1>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+            incidunt corrupti accusantium dolorem fugit quos numquam minus quo,
+            excepturi labore aliquam optio delectus, amet necessitatibus.
+            Voluptatem distinctio quae voluptate vero!
+          </p>
+          <br />
+          -Creative Ideas
+          <br />
+          <br />
+          -Dynamic Websites
+          <br />
+          <br />
+          -Web Development Solution
+          <br />
+          <Button url="contact" text="Contact Us" />
         </div>
       </div>
     </div>
