@@ -11,13 +11,13 @@ const Portfolio = () => {
      <div className={styles.container}>
       <h1 className={styles.selectTitle}>Choose a gallery</h1>
       <div className={styles.items}>
-        <Link href="/portfolio/illustrations" className={styles.link}>
+        <Link href="/portfolio/Illustrations" className={styles.link}>
           <span className={styles.title}>Illustrations</span>
         </Link>
-        <Link href="/portfolio/illustrations" className={styles.link}>
+        <Link href="/portfolio/Websites" className={styles.link}>
           <span className={styles.title}>Website</span>
         </Link>
-        <Link href="/portfolio/illustrations" className={styles.link}>
+        <Link href="/portfolio/Applications" className={styles.link}>
           <span className={styles.title}>Applications</span>
         </Link>
       </div>

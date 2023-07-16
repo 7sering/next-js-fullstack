@@ -1,41 +1,40 @@
-.container{
-    
+.container {
 }
-.mainTitle{
-    font-size: 70px;
+.mainTitle {
+  font-size: 70px;
 }
-.selectTitle{
-    margin-top: 20px;
-    padding-bottom: 10px;
+.selectTitle {
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
-.items{
-    display: flex;
-    gap: 50px;
+.items {
+  display: flex;
+  gap: 50px;
 }
-.link{
-    border: 5px solid #bbb;
-    border-radius: 5px;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    background-size: cover !important;
+.link {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-size: cover !important;
 }
-.link:nth-child(1){
-    background: url('/illustration.png');
+.link:nth-child(1) {
+  background: url("/illustration.png");
 }
-.link:nth-child(2){
-    background: url('/websites.jpg');
+.link:nth-child(2) {
+  background: url("/websites.jpg");
 }
-.link:nth-child(3){
-    background: url('/apps.jpg');
+.link:nth-child(3) {
+  background: url("/apps.jpg");
 }
-.title{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-weight: bold;
-    font-size: 18px;
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
-.link:hover .title{
-    color: aqua;
+.link:hover .title {
+  color: aqua;
 }
