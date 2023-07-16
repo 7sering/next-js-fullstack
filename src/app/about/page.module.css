@@ -19,6 +19,16 @@
 .textContainer{
     display: flex;
     gap: 100px;
+    
+}
+.imgTitle{
+    padding: 5px 0 0px 5px;
+    color: #e7e7e7;
+}
+.imgDescription{
+    padding: 3px 5px 5px 5px;
+    font-size: 22px;
+    color: #e7e7e7;
 }
 .item{
     flex: 1;
