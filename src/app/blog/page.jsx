@@ -24,7 +24,7 @@ const Blog = async () => {
           <Link href={`/blog/${item.id}`} className={styles.blog} key={item.id}>
             <div className={styles.imageContainer}>
               <Image
-                src="https://images.unsplash.com/photo-1573152143286-0c422b4d2175?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                src="https://images.pexels.com/photos/17568714/pexels-photo-17568714/free-photo-of-subway-on-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="blog"
                 width={400}
                 height={250}
