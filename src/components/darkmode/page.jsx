@@ -6,7 +6,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 const DarkMode = () => {
   const { toggle, mode } = useContext(ThemeContext);
   return (
-    <div class={styles.container} onClick={toggle}>
+    <div className={styles.container} onClick={toggle}>
       <div className={styles.icon}>🌜</div>
       <div className={styles.icon}>☀</div>
       <div
