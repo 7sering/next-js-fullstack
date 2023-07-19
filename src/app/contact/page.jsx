@@ -3,6 +3,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/button/Button";
 
+export const metadata = {
+  title: "Wasabi - Contact us",
+  description: "Feel free to contact us",
+};
+
+
 const Contact = () => {
   return (
     <>
