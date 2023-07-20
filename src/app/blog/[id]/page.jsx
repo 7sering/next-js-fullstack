@@ -15,6 +15,7 @@ async function getData(id) {
   return res.json();
 }
 
+// Dynamically generate metadata for each page seo
 export async function generateMetadata({ params }) {
   const post =  await getData(params.id);
   return {
@@ -30,7 +31,7 @@ const BlogPost = async ({ params }) => {
       <div className={styles.top}>
         <div className={styles.info}>
           <h1 className={styles.title}>{data.title}</h1>
-          <p className={styles.desc}>{data.content}</p>
+          <p className={styles.desc}>{data.desc}</p>
           <div className={styles.author}>
             <Image
               src={data.img}
@@ -47,7 +48,7 @@ const BlogPost = async ({ params }) => {
         </div>
       </div>
       <div className={styles.content}>
-        <p className={styles.text}>{data.desc}</p>
+        <p className={styles.text}>{data.content}</p>
       </div>
     </div>
   );
