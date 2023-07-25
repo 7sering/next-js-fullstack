@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.css";
 import DarkMode from "../darkmode/page";
+import { signOut, useSession } from "next-auth/react";
 
 const links = [
   {
@@ -38,6 +39,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const session = useSession();
   return (
     <>
       <div className={styles.container}>
@@ -45,15 +47,26 @@ const Navbar = () => {
           Wasabi Dev
         </Link>
 
-       <div className={styles.link}>
-       <DarkMode/>
-       {links.map((link) => (
-          <Link key={link.id} href={link.url}>
-            {link.title}
-          </Link>
-        ))}
-        <button onClick={() => console.log("Logout")} className={styles.logout}>Logout</button>
-       </div>
+        <div className={styles.link}>
+          <DarkMode />
+          {links.map((link) => (
+            <Link key={link.id} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+
+          {session.status === "unauthenticated" && (
+            <Link href="/dashboard/login">
+              <button className={styles.logout}>Login</button>
+            </Link>
+          )}
+
+          {session.status === "authenticated" && (
+            <button onClick={signOut} className={styles.logout}>
+              Logout
+            </button>
+          )}
+        </div>
       </div>
     </>
   );

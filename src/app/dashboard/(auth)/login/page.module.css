@@ -27,6 +27,7 @@
     color: wheat;
     border: none;
     transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 .button:hover{
     background-color: rgb(10, 161, 56);
